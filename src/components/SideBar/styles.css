@@ -1,0 +1,7 @@
+#page-landing .sidebar {
+  height: 100vh;
+  width: 8rem;
+  display: block;
+
+  background-color: var(--color-base);
+}

@@ -1,0 +1,29 @@
+#main .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  padding: 2rem 3rem;
+}
+
+#main .topbar svg {
+  margin: 0 1.3rem;
+  fill: var(--color-title-grey);
+}
+
+#main .topbar .help svg {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+#main .topbar .moon svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#page-landing .topbar img {
+  margin: 0 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+}
