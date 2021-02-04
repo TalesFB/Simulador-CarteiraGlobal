@@ -2,11 +2,27 @@
   height: 100vh;
   width: 5rem;
 
-  background-color: var(--color-header);
+  background-color: var(--color-base);
+}
+
+#page-landing .topbar {
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 #page-landing .topbar img {
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
+}
+
+#main h3 {
+  font: 600 2rem Roboto;
+  color: var(--color-title-grey);
+}
+
+#main h1 {
+  font: 700 3rem Roboto;
+  color: var(--color-primary);
 }
