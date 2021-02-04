@@ -6,7 +6,7 @@
 
 #page-landing .sidebar {
   height: 100vh;
-  width: 6.5rem;
+  width: 8rem;
   display: block;
 
   background-color: var(--color-base);
@@ -47,21 +47,21 @@
 }
 
 #main .header h3 {
-  margin: 1rem 1rem 0 2rem;
+  margin: 1rem 1rem 0 2.3rem;
   padding-top: 5rem;
   font: 800 1.6rem Exo;
   color: var(--color-title-grey);
 }
 
 #main .header h1 {
-  margin: 0 1rem 1rem 2rem;
+  margin: 0 1rem 1rem 2.3rem;
   font: 800 3.5rem Exo;
   color: var(--color-primary);
 }
 
 #graphs {
   height: 75%;
-  margin: 1rem 0 2rem 2rem;
+  margin: 1.2rem 0 2rem 2.3rem;
   background-color: var(--color-base);
 }
 
