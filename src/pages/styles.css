@@ -1,0 +1,15 @@
+#page-landing {
+}
+
+#page-landing .sidebar {
+  height: 100vh;
+  width: 5rem;
+  margin-right: 0;
+  background-color: var(--color-header);
+}
+
+#page-landing .topbar img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}

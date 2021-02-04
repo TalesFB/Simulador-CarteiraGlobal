@@ -1,0 +1,36 @@
+:root {
+  /*--colocar variaveis de cores*/
+  --color-base: #447cff;
+  --color-background: #c9d1d9;
+  --color-header: #ffffff;
+  --color-font-buttons: #393636;
+  --color-box-news: #e5e5e5;
+  --color-title-grey: #595858;
+  --color-text-depositions: #c4c4c4;
+  --color-footer: #393636;
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  background-color: var(--color-background);
+}
+
+body {
+  background: var();
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Poppins;
+}
