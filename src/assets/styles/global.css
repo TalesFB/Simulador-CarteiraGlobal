@@ -1,7 +1,7 @@
 :root {
   /*--colocar variaveis de cores*/
   --color-primary: #007aff;
-  --color-background: #e4e6e8;
+  --color-background: hsl(0deg 0% 96%);
   --color-base: #ffffff;
   --color-font-buttons: #393636;
   --color-box-news: #e5e5e5;
@@ -21,7 +21,6 @@ html,
 body,
 #root {
   height: 100vh;
-  background-color: var(--color-background);
 }
 
 body {

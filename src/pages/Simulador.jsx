@@ -9,6 +9,10 @@ import "./styles.css";
 function Simulador() {
   return (
     <div id="page-landing">
+      <div className="sidebar">
+        <GoGraph />
+        <RiWallet2Line />
+      </div>
       <div id="main">
         <div className="topbar">
           <a className="help" href="">

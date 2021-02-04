@@ -1,16 +1,30 @@
+#page-landing {
+  display: flex;
+
+  background-color: var(--color-background);
+}
+
 #page-landing .sidebar {
   height: 100vh;
-  width: 5rem;
+  width: 6.5rem;
 
   background-color: var(--color-base);
 }
 
-#page-landing .topbar {
-  padding: 2rem 3rem;
+#main .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  padding: 1rem 3rem;
+}
+
+#main {
+  width: 100%;
 }
 
 #main .topbar svg {
-  margin: 0 1.5rem;
+  margin: 0 1.3rem;
   fill: var(--color-title-grey);
 }
 
@@ -25,19 +39,21 @@
 }
 
 #page-landing .topbar img {
+  margin: 0 0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 100%;
 }
 
 #main h3 {
-  margin: 1rem 1rem 0 2rem;
+  margin: 1rem 1rem 0 2.5rem;
+  padding-top: 5rem;
   font: 800 1.6rem Exo;
   color: var(--color-title-grey);
 }
 
 #main h1 {
-  margin: 0 1rem 1rem 2rem;
+  margin: 0 1rem 1rem 2.5rem;
   font: 800 3.5rem Exo;
   color: var(--color-primary);
 }
