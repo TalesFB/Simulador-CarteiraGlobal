@@ -6,27 +6,38 @@
 }
 
 #page-landing .topbar {
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+#main .topbar svg {
+  margin: 0 1.5rem;
+  fill: var(--color-title-grey);
+}
+
+#main .topbar .help svg {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+#main .topbar .moon svg {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 #page-landing .topbar img {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 100%;
 }
 
 #main h3 {
+  margin: 1rem 1rem 0 2rem;
   font: 800 1.6rem Exo;
   color: var(--color-title-grey);
 }
 
 #main h1 {
-  font: 800 3rem Exo;
+  margin: 0 1rem 1rem 2rem;
+  font: 800 3.5rem Exo;
   color: var(--color-primary);
-}
-
-#main .topbar svg {
-  fill: var(--color-title-grey);
 }

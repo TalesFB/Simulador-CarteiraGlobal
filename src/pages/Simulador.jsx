@@ -9,11 +9,14 @@ import "./styles.css";
 function Simulador() {
   return (
     <div id="page-landing">
-      <div className="sidebar"></div>
       <div id="main">
         <div className="topbar">
-          <AiFillQuestionCircle />
-          <FaMoon />
+          <a className="help" href="">
+            <AiFillQuestionCircle />
+          </a>
+          <a className="moon" href="">
+            <FaMoon />
+          </a>
           <img
             src="https://i.pinimg.com/originals/8b/da/ca/8bdaca81d5ddbaeb92b61d6b5787d866.jpg"
             alt=""
