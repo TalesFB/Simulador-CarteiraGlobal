@@ -26,8 +26,18 @@ function Simulador() {
             alt=""
           />
         </div>
-        <h3>RENDA FIXA</h3>
-        <h1>Simulador de Renda fixa</h1>
+        <div className="header">
+          <h3>RENDA FIXA</h3>
+          <h1>Simulador de Renda fixa</h1>
+        </div>
+
+        <div id="graphs">
+          <div className="values">
+            <h1>1. INVESTIMENTO SIMULADO</h1>
+            <h3>VALOR INVESTIDO</h3>
+          </div>
+          <div className="results"></div>
+        </div>
       </div>
     </div>
   );

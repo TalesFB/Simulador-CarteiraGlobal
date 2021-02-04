@@ -7,8 +7,13 @@
 #page-landing .sidebar {
   height: 100vh;
   width: 6.5rem;
+  display: block;
 
   background-color: var(--color-base);
+}
+
+#main {
+  width: 100%;
 }
 
 #main .topbar {
@@ -16,11 +21,7 @@
   align-items: center;
   justify-content: center;
   float: right;
-  padding: 1rem 3rem;
-}
-
-#main {
-  width: 100%;
+  padding: 2rem 3rem;
 }
 
 #main .topbar svg {
@@ -45,15 +46,34 @@
   border-radius: 100%;
 }
 
-#main h3 {
-  margin: 1rem 1rem 0 2.5rem;
+#main .header h3 {
+  margin: 1rem 1rem 0 2rem;
   padding-top: 5rem;
   font: 800 1.6rem Exo;
   color: var(--color-title-grey);
 }
 
-#main h1 {
-  margin: 0 1rem 1rem 2.5rem;
+#main .header h1 {
+  margin: 0 1rem 1rem 2rem;
   font: 800 3.5rem Exo;
   color: var(--color-primary);
+}
+
+#graphs {
+  height: 75%;
+  margin: 1rem 0 2rem 2rem;
+  background-color: var(--color-base);
+}
+
+#graphs .values h1 {
+  padding-top: 3rem;
+  margin: 0 1rem 0 2rem;
+  font: 800 1.7rem Exo;
+  color: var(--color-primary);
+}
+
+#graphs .values h3 {
+  margin: 2rem 1rem 0 2rem;
+  font: 800 1.2rem Exo;
+  color: var(--color-title-grey);
 }
