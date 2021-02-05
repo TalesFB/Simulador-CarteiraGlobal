@@ -1,7 +1,12 @@
 import React from "react";
 
-import { GoGraph } from "react-icons/go";
-import { RiWallet2Line } from "react-icons/ri";
+import { RiWallet2Line, RiFileCopy2Line, RiFileListLine } from "react-icons/ri";
+import { AiOutlineStock, AiFillSignal } from "react-icons/ai";
+import { TiDocumentText } from "react-icons/ti";
+import { MdPieChartOutlined } from "react-icons/md";
+import { BiBriefcaseAlt2 } from "react-icons/bi";
+import { CgCopy } from "react-icons/cg";
+
 import LogoCG from "../../assets/imagens/logo-icon.svg";
 
 import "../../assets/styles/sidebar.css";
@@ -23,7 +28,27 @@ function Sidebar() {
       link: "/",
     },
     {
-      icon: <GoGraph />,
+      icon: <AiOutlineStock />,
+      link: "/",
+    },
+    {
+      icon: <RiFileListLine />,
+      link: "/",
+    },
+    {
+      icon: <MdPieChartOutlined />,
+      link: "/",
+    },
+    {
+      icon: <RiFileCopy2Line />,
+      link: "/",
+    },
+    {
+      icon: <AiFillSignal />,
+      link: "/",
+    },
+    {
+      icon: <BiBriefcaseAlt2 />,
       link: "/",
     },
   ];

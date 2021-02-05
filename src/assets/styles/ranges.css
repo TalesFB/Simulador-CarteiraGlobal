@@ -10,13 +10,20 @@
   color: var(--color-title-grey);
 }
 
+.values .ranges span {
+  position: relative;
+  text-align: right;
+  margin-right: 2rem;
+  font: 800 1.5rem Exo;
+}
+
 .values .ranges input[type="range"] {
   /* -webkit-appearance: none; */
   /* appearance: none; */
 
   display: inline-block;
-  margin-top: 3rem;
-  width: 35rem;
+  margin-top: 2rem;
+  width: 90%;
   height: 0.5rem;
   position: relative;
   left: 2rem;

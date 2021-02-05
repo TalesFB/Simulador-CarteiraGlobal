@@ -24,4 +24,17 @@
   height: 2.1rem;
   width: 2.1rem;
   fill: var(--color-title-grey);
+  transition: fill 0.5s;
+}
+
+#page-landing .sidebar li {
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+#page-landing .sidebar li:hover {
+  background-color: var(--color-primary);
+}
+#page-landing .sidebar li:hover a svg {
+  fill: var(--color-base);
 }
