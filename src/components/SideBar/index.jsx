@@ -2,14 +2,17 @@ import React from "react";
 
 import { GoGraph } from "react-icons/go";
 import { RiWallet2Line } from "react-icons/ri";
+import LogoCG from "../../assets/imagens/logo-icon.svg";
 
 import "../../assets/styles/sidebar.css";
 
 const Icons = ({ props }) => {
   return (
-    <ul>
-      <li>{props.icon}</li>
-    </ul>
+    <li>
+      <a className="item-icone" href={props.link}>
+        {props.icon}
+      </a>
+    </li>
   );
 };
 
@@ -27,9 +30,12 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      {sidebarData.map((data) => (
-        <Icons props={data} />
-      ))}
+      <img src={LogoCG} alt="" />
+      <ul>
+        {sidebarData.map((data) => (
+          <Icons props={data} />
+        ))}
+      </ul>
     </div>
   );
 }

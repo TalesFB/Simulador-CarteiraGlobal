@@ -6,3 +6,22 @@
 
   background-color: var(--color-base);
 }
+
+#page-landing .sidebar img {
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem 1rem 2rem 1.5rem;
+}
+
+#page-landing .sidebar .item-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-landing .sidebar .item-icone svg {
+  margin: 2rem 0;
+  height: 2.1rem;
+  width: 2.1rem;
+  fill: var(--color-title-grey);
+}
