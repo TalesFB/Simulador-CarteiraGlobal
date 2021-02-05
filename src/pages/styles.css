@@ -4,7 +4,7 @@
 }
 
 #main {
-  margin-left: 8rem;
+  margin-left: 7rem;
   width: calc(100% - 8rem);
 }
 
@@ -12,6 +12,7 @@
   /* height: 77%; */
   width: 31%;
   margin: 1.2rem 0 2rem 2.3rem;
+  padding-bottom: 5rem;
   background-color: var(--color-base);
 }
 
@@ -20,10 +21,4 @@
   margin: 0 1rem 0 2rem;
   font: 800 1.7rem Exo;
   color: var(--color-primary);
-}
-
-#charts .values h3 {
-  margin: 2rem 1rem 0 2rem;
-  font: 800 1.2rem Exo;
-  color: var(--color-title-grey);
 }

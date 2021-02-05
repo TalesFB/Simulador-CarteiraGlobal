@@ -21,6 +21,7 @@ html,
 body,
 #root {
   height: 100vh;
+  margin-bottom: 5rem;
 }
 
 body {

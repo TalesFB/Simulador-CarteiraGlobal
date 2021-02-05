@@ -3,6 +3,7 @@ import React from "react";
 import Sidebar from "../components/SideBar";
 import Topbar from "../components/TopBar";
 import Header from "../components/Header";
+import Ranges from "../components/Ranges";
 
 import {} from "react-icons/";
 import "./styles.css";
@@ -17,7 +18,7 @@ function Simulador() {
         <div id="charts">
           <div className="values">
             <h1>1. INVESTIMENTO SIMULADO</h1>
-            <h3>VALOR INVESTIDO</h3>
+            <Ranges />
           </div>
           <div className="results"></div>
         </div>

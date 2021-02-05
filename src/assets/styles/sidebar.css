@@ -1,7 +1,7 @@
 #page-landing .sidebar {
   position: fixed;
   height: 100vh;
-  width: 8rem;
+  width: 7rem;
   display: block;
 
   background-color: var(--color-base);

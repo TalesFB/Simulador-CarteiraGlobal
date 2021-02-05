@@ -3,7 +3,7 @@ import React from "react";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 
-import "./styles.css";
+import "../../assets/styles/topbar.css";
 
 function Topbar() {
   return (
