@@ -14,7 +14,7 @@ function Simulador() {
       <div id="main">
         <Topbar />
         <Header />
-        <div id="graphs">
+        <div id="charts">
           <div className="values">
             <h1>1. INVESTIMENTO SIMULADO</h1>
             <h3>VALOR INVESTIDO</h3>

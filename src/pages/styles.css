@@ -1,28 +1,28 @@
 #page-landing {
   display: flex;
   height: 100vh;
-  background-color: var(--color-background);
 }
 
 #main {
-  width: 100%;
+  margin-left: 8rem;
+  width: calc(100% - 8rem);
 }
 
-#graphs {
-  height: 90%;
+#charts {
+  /* height: 77%; */
   width: 31%;
   margin: 1.2rem 0 2rem 2.3rem;
   background-color: var(--color-base);
 }
 
-#graphs .values h1 {
+#charts .values h1 {
   padding-top: 3rem;
   margin: 0 1rem 0 2rem;
   font: 800 1.7rem Exo;
   color: var(--color-primary);
 }
 
-#graphs .values h3 {
+#charts .values h3 {
   margin: 2rem 1rem 0 2rem;
   font: 800 1.2rem Exo;
   color: var(--color-title-grey);
