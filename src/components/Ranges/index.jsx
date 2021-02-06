@@ -3,24 +3,55 @@ import "../../assets/styles/ranges.css";
 
 const Input = ({ props }) => {
   const [value, setValue] = useState(props.defaultValue);
-  const rateOptions = [
+  const [rateOptions, setRateOptions] = useState([
     {
       value: 0,
       label: "% do CDI",
+      min: 0.1,
+      max: 2,
+      defaultValue: 1,
+      step: 0.01,
+      active: true,
     },
     {
       value: 1,
       label: "CDI + %",
+      min: -0.03,
+      max: 0.03,
+      defaultValue: 0.01,
+      step: 0.001,
     },
     {
       value: 3,
       label: "IPCA + %",
+      min: 0.01,
+      max: 0.15,
+      defaultValue: 0.05,
+      step: 0.005,
     },
     {
       value: 4,
       label: "Prefixado",
+      min: 0.03,
+      max: 0.15,
+      defaultValue: 0.08,
+      step: 0.005,
     },
-  ];
+  ]);
+
+  function optionSelect(value) {
+    setRateOptions((options) =>
+      options.map((option) => {
+        return option.value === value
+          ? { ...option, active: true }
+          : { ...option, active: false };
+      })
+    );
+  }
+
+  function getCurrentoption() {
+    return rateOptions.find((option) => option.active); //para cada opção dentro de rateOptions sera testado se esta ativa e se tiver ativa retorna a primeria insidencia.
+  }
 
   function format(value) {
     switch (props.type) {
@@ -31,7 +62,7 @@ const Input = ({ props }) => {
         }).format(value);
 
       case "meses":
-        return value == 1 ? `1 mês` : `${value} meses`; //onterpolação da variavel value e a string.
+        return value == 1 ? `1 mês` : `${value} meses`; //interpolação da variavel value e a string.
 
       case "percentual":
         return `${value} %`;
@@ -45,7 +76,10 @@ const Input = ({ props }) => {
     <>
       <label>{props.label}</label>
       {props.hasSelect && (
-        <select className="options">
+        <select
+          className="options"
+          onChange={(e) => optionSelect(e.target.value)}
+        >
           {rateOptions.map((option) => (
             <option value={option.value}>{option.label}</option>
           ))}
@@ -54,10 +88,12 @@ const Input = ({ props }) => {
       <span>{format(value)}</span>
       <input
         type="range"
-        min={props.min}
-        max={props.max}
-        step={props.step || 1}
-        defaultValue={props.defaultValue}
+        min={props.hasSelect ? getCurrentoption().min : props.min} //operador ternário com tres opções(condição, if ,else)
+        max={props.hasSelect ? getCurrentoption().max : props.max}
+        step={props.hasSelect ? getCurrentoption().step : props.step}
+        defaultValue={
+          props.hasSelect ? getCurrentoption().defaultValue : props.defaultValue
+        }
         onChange={(e) => setValue(e.target.value)}
       />
     </>
@@ -70,47 +106,44 @@ function Ranges() {
       label: "VALOR INVESTIDO",
       type: "moeda",
       min: 1,
-      max: 2e5,
-      defaultValue: 100,
+      max: 1e6,
+      defaultValue: 100000,
+      step: 5000,
     },
     {
       label: "PERÍODO",
       type: "meses",
       min: 1,
-      max: 48,
-      defaultValue: 1,
+      max: 120,
+      defaultValue: 25,
+      step: 1,
     },
     {
       label: "TAXA AO ANO DO CDB/LC",
       hasSelect: true,
       type: "percentual",
-      min: 0,
-      max: 200,
-      defaultValue: 100,
     },
     {
       label: "TAXA AO ANO DO LCI/LCA",
       hasSelect: true,
       type: "percentual",
-      min: 0,
-      max: 200,
-      defaultValue: 100,
     },
     {
       label: "TAXA DI",
       type: "taxa",
-      min: 0,
-      max: 12.8,
+      min: 0.01,
+      max: 0.2,
       step: 0.1,
-      defaultValue: 1,
+      defaultValue: 0.059,
+      step: 0.001,
     },
     {
       label: "TAXA IPCA",
       type: "taxa",
-      min: 0,
-      max: 12.8,
-      step: 0.1,
-      defaultValue: 1,
+      min: 0.01,
+      max: 0.2,
+      defaultValue: 0.035,
+      step: 0.001,
     },
   ];
 

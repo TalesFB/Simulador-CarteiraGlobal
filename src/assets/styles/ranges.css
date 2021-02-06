@@ -5,7 +5,7 @@
 }
 
 .values label {
-  margin: 1rem 1rem 0 2rem;
+  margin: 2rem 1rem -0.9rem 2rem;
   font: 800 1.5rem Exo;
   color: var(--color-title-grey);
 }
@@ -13,7 +13,7 @@
 .values .ranges span {
   position: relative;
   text-align: right;
-  margin-right: 2rem;
+  margin: -0.5rem 2rem 0.1rem;
   font: 800 2rem Exo;
 }
 
@@ -33,6 +33,13 @@
   cursor: pointer;
 }
 
-.values .ranges input[type="range"] ::-ms-fill-lower {
-  background-color: var(--color-primary);
+.values .ranges .options {
+  margin: 2rem 0 -1rem 1.2rem;
+  padding: 0.5rem;
+  width: 10.7rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font: 760 1.6rem Exo;
 }

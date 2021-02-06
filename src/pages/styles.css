@@ -18,7 +18,7 @@
 
 #charts .values h1 {
   padding-top: 3rem;
-  margin: 0 1rem 0 2rem;
+  margin: 0 1rem -1rem 2rem;
   font: 800 1.9rem Exo;
   color: var(--color-primary);
 }
