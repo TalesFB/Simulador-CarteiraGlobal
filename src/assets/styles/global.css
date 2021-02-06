@@ -21,7 +21,7 @@ html,
 body,
 #root {
   height: 100vh;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 body {
@@ -38,8 +38,7 @@ textarea {
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
 e 10px de altura para a barra horizontal */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 7px;
 }
 
 /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/

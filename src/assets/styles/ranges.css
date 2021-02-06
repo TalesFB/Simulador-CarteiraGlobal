@@ -6,7 +6,7 @@
 
 .values label {
   margin: 1rem 1rem 0 2rem;
-  font: 800 1.2rem Exo;
+  font: 800 1.5rem Exo;
   color: var(--color-title-grey);
 }
 
@@ -14,15 +14,15 @@
   position: relative;
   text-align: right;
   margin-right: 2rem;
-  font: 800 1.5rem Exo;
+  font: 800 2rem Exo;
 }
 
 .values .ranges input[type="range"] {
   /* -webkit-appearance: none; */
-  /* appearance: none; */
+  /* appearance: none; retira toda a predefinições de css padrão do navegador */
 
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 90%;
   height: 0.5rem;
   position: relative;
@@ -31,4 +31,8 @@
   background-color: var(--color-background);
   outline: none;
   cursor: pointer;
+}
+
+.values .ranges input[type="range"] ::-ms-fill-lower {
+  background-color: var(--color-primary);
 }

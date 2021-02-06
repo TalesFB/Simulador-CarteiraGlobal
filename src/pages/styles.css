@@ -4,7 +4,7 @@
 }
 
 #main {
-  margin-left: 7rem;
+  margin-left: 10rem;
   width: calc(95% - 8rem);
 }
 
@@ -12,13 +12,13 @@
   /* height: 77%; */
   width: 31%;
   margin: 1.2rem 0 2rem 2.3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   background-color: var(--color-base);
 }
 
 #charts .values h1 {
   padding-top: 3rem;
   margin: 0 1rem 0 2rem;
-  font: 800 1.7rem Exo;
+  font: 800 1.9rem Exo;
   color: var(--color-primary);
 }

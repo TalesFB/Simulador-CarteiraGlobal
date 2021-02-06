@@ -2,18 +2,17 @@ import React from "react";
 
 import { RiWallet2Line, RiFileCopy2Line, RiFileListLine } from "react-icons/ri";
 import { AiOutlineStock, AiFillSignal } from "react-icons/ai";
-import { TiDocumentText } from "react-icons/ti";
+import CompMaster from "../../assets/images/CompMaster.svg";
 import { MdPieChartOutlined } from "react-icons/md";
 import { BiBriefcaseAlt2 } from "react-icons/bi";
-import { CgCopy } from "react-icons/cg";
 
-import LogoCG from "../../assets/imagens/logo-icon.svg";
+import LogoCG from "../../assets/images/logo-icon.svg";
 
 import "../../assets/styles/sidebar.css";
 
 const Icons = ({ props }) => {
   return (
-    <li>
+    <li className={props.active && "active"}>
       <a className="item-icone" href={props.link}>
         {props.icon}
       </a>
@@ -25,6 +24,10 @@ function Sidebar() {
   const sidebarData = [
     {
       icon: <RiWallet2Line />,
+      link: "/",
+    },
+    {
+      icon: <img src={CompMaster} />,
       link: "/",
     },
     {
@@ -46,6 +49,7 @@ function Sidebar() {
     {
       icon: <AiFillSignal />,
       link: "/",
+      active: true,
     },
     {
       icon: <BiBriefcaseAlt2 />,
