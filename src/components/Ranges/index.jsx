@@ -137,7 +137,6 @@ function Ranges() {
       type: "taxa",
       min: 0.01,
       max: 0.2,
-      step: 0.1,
       defaultValue: 0.059,
       step: 0.001,
     },

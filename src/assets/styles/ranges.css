@@ -6,15 +6,15 @@
 
 .values label {
   margin: 2rem 1rem -0.9rem 2rem;
-  font: 800 1.5rem Exo;
+  font: 800 1.4rem Exo;
   color: var(--color-title-grey);
 }
 
 .values .ranges span {
   position: relative;
   text-align: right;
-  margin: -0.5rem 2rem 0.1rem;
-  font: 800 2rem Exo;
+  margin: 0 2rem 0 0;
+  font: 800 1.9rem Exo;
 }
 
 .values .ranges input[type="range"] {
@@ -34,12 +34,14 @@
 }
 
 .values .ranges .options {
-  margin: 2rem 0 -1rem 1.2rem;
-  padding: 0.5rem;
-  width: 10.7rem;
+  position: relative;
+  top: 1rem;
+  left: 1.5rem;
+
+  width: 10.8rem;
   border: none;
   outline: none;
   cursor: pointer;
 
-  font: 760 1.6rem Exo;
+  font: 760 1.9rem Exo;
 }
