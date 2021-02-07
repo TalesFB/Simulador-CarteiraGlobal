@@ -2,7 +2,6 @@ import React, { createRef, useState, useEffect } from "react";
 import "../../assets/styles/ranges.css";
 
 const Input = ({ props }) => {
-  const [value, setValue] = useState(props.defaultValue);
   const [rateOptions, setRateOptions] = useState([
     {
       value: 0,
@@ -39,10 +38,14 @@ const Input = ({ props }) => {
     },
   ]);
 
+  const [value, setValue] = useState(
+    props.hasSelect ? getCurrentoption()?.defaultValue : props.defaultValue
+  );
+
   function optionSelect(value) {
     setRateOptions((options) =>
       options.map((option) => {
-        return option.value === value
+        return option.value == value
           ? { ...option, active: true }
           : { ...option, active: false };
       })
@@ -59,7 +62,7 @@ const Input = ({ props }) => {
         return Intl.NumberFormat("pt-BR", {
           style: "currency",
           currency: "BRL",
-        }).format(value);
+        }).format(value); //transforma o value em valor real brasileiro
 
       case "meses":
         return value == 1 ? `1 mês` : `${value} meses`; //interpolação da variavel value e a string.
@@ -79,6 +82,7 @@ const Input = ({ props }) => {
         <select
           className="options"
           onChange={(e) => optionSelect(e.target.value)}
+          defaultValue={getCurrentoption().value}
         >
           {rateOptions.map((option) => (
             <option value={option.value}>{option.label}</option>
@@ -88,7 +92,7 @@ const Input = ({ props }) => {
       <span>{format(value)}</span>
       <input
         type="range"
-        min={props.hasSelect ? getCurrentoption().min : props.min} //operador ternário com tres opções(condição, if ,else)
+        min={props.hasSelect ? getCurrentoption().min : props.min} //operador ternário com tres opções(condição ? if : else)
         max={props.hasSelect ? getCurrentoption().max : props.max}
         step={props.hasSelect ? getCurrentoption().step : props.step}
         defaultValue={
@@ -105,7 +109,7 @@ function Ranges() {
     {
       label: "VALOR INVESTIDO",
       type: "moeda",
-      min: 1,
+      min: 5000,
       max: 1e6,
       defaultValue: 100000,
       step: 5000,
