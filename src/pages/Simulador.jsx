@@ -1,5 +1,8 @@
 import React from "react";
 
+import Highcharts from "highcharts";
+import HighchartsReact from "highcharts-react-official";
+
 import Sidebar from "../components/SideBar";
 import Topbar from "../components/TopBar";
 import Header from "../components/Header";
@@ -20,7 +23,9 @@ function Simulador() {
             <h1>1. INVESTIMENTO SIMULADO</h1>
             <Ranges />
           </div>
-          <div className="results"></div>
+          <div className="results">
+            <HighchartsReact Highcharts={Highcharts} options={{}} />
+          </div>
         </div>
       </div>
     </div>
