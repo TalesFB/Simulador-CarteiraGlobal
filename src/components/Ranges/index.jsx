@@ -71,7 +71,7 @@ const Input = ({ props }) => {
         return `${value} %`;
 
       case "taxa":
-        return `${value} a.a`;
+        return `${value} % a.a`;
     }
   }
 
@@ -92,11 +92,13 @@ const Input = ({ props }) => {
       <span>{format(value)}</span>
       <input
         type="range"
-        min={props.hasSelect ? getCurrentoption().min : props.min} //operador ternário com tres opções(condição ? if : else)
-        max={props.hasSelect ? getCurrentoption().max : props.max}
-        step={props.hasSelect ? getCurrentoption().step : props.step}
+        min={props.hasSelect ? getCurrentoption().min * 100 : props.min} //operador ternário com tres opções(condição ? if : else)
+        max={props.hasSelect ? getCurrentoption().max * 100 : props.max}
+        step={props.hasSelect ? getCurrentoption().step * 100 : props.step}
         defaultValue={
-          props.hasSelect ? getCurrentoption().defaultValue : props.defaultValue
+          props.hasSelect
+            ? getCurrentoption().defaultValue * 100
+            : props.defaultValue
         }
         onChange={(e) => setValue(e.target.value)}
       />

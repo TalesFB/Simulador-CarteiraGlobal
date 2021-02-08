@@ -12,6 +12,35 @@ import {} from "react-icons/";
 import "./styles.css";
 
 function Simulador() {
+  const options = {
+    chart: {
+      type: "column",
+    },
+    credits: {
+      enabled: false,
+    },
+    title: {
+      text: "",
+    },
+    colors: ["#8c979f", "#447cff", "#5ac7ff", "#e4e6e8"],
+    xAxis: {
+      categories: [""],
+    },
+    series: [
+      {
+        name: "TOTAL LÍQUIDO",
+        data: [0.5],
+      },
+      {
+        name: "TOTAL LÍQUIDO",
+        data: [0.7],
+      },
+      {
+        name: "TOTAL LÍQUIDO",
+        data: [0.8],
+      },
+    ],
+  };
   return (
     <div id="page-landing">
       <Sidebar />
@@ -24,7 +53,12 @@ function Simulador() {
             <Ranges />
           </div>
           <div className="results">
-            <HighchartsReact Highcharts={Highcharts} options={{}} />
+            <h1>2. VALOR ESPERADO</h1>
+            <HighchartsReact
+              Highcharts={Highcharts}
+              options={options}
+              className="chart"
+            />
           </div>
         </div>
       </div>

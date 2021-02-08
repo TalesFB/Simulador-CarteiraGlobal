@@ -39,6 +39,7 @@ textarea {
 e 10px de altura para a barra horizontal */
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
