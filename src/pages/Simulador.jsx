@@ -8,7 +8,6 @@ import Topbar from "../components/TopBar";
 import Header from "../components/Header";
 import Ranges from "../components/Ranges";
 
-import {} from "react-icons/";
 import "./styles.css";
 
 function Simulador() {
