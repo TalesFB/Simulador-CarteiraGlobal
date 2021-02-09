@@ -24,7 +24,16 @@ function Simulador() {
     },
     colors: ["#8c979f", "#447cff", "#5ac7ff", "#e4e6e8"],
     xAxis: {
-      categories: [""],
+      visible: false,
+      lineColor: "transparent",
+      tickLength: 0,
+    },
+    yAxis: {
+      title: {
+        text: "",
+      },
+      gridLineWidth: 0,
+      minorGridLineWidth: 0,
     },
     series: [
       {
