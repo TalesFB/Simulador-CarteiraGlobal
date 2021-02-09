@@ -8,7 +8,7 @@ import Topbar from "../components/TopBar";
 import Header from "../components/Header";
 import Ranges from "../components/Ranges";
 
-import "./styles.css";
+import "../assets/styles/page-simulador.css";
 
 function Simulador() {
   const options = {
